@@ -30,3 +30,11 @@ std::fill(myVector.begin(), myVector.end(), 0);
 vec.erase(vec.begin() + 1);
 //Insert at a sepcific position
 v1.insert(v1.begin()+i, v2[i])
+
+
+//Time Complexity:
+size(): Returns the number of elements in the vector. Its time complexity is O(1).
+push_back(): Inserts a new element at the end of the vector. Its time complexity is O(1).
+pop_back(): Removes the last element from the vector. Its time complexity is O(1).
+front(): Returns the reference to the first element. Its time complexity is O(1).
+
