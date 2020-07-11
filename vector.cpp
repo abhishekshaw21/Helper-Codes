@@ -13,6 +13,14 @@ max(first,second);
 min(first,second);
 //Sort a vector
 sort(myvector.begin(), myvector.end());
+//Sorting a vector in descending order without passing custom comparator function to sort()
+sort(myvector.rbegin(),myvector.rend());
+//Sorting a vector partially, i.e. sorting elements between the range of [low,mid] by taking all the elements of the array into consideration where mid is considered as the 
+//upper bound for elements to be sorted and low is considered as the lower bound for elements that are to be sorted. In the below example, partial_sort() sorts the first 4 elements 
+//of myvector
+partial_sort(myvector.begin(),myvector.begin()+3,myvector.end());
+//Sorting a vector in such a way that the equal elements of myvector are in the same order in the sorted vector as they were in the original one, i.e. sorting in a stable manner
+stable_sort(myvector.begin(),myvector.end());
 //Reverse Sort a vector
 reverse(myvector.begin(), myvector.end());
 //Initialize a 2 D vector
@@ -37,4 +45,5 @@ size(): Returns the number of elements in the vector. Its time complexity is O(1
 push_back(): Inserts a new element at the end of the vector. Its time complexity is O(1).
 pop_back(): Removes the last element from the vector. Its time complexity is O(1).
 front(): Returns the reference to the first element. Its time complexity is O(1).
-
+sort(): Uses Introsort which is a hybrid of Quicksort, Heapsort and Insertion sort in order to minimize the running time of this function.
+stable_sort(): Uses merge sort, so time complexity is O(nlogn).
