@@ -18,7 +18,8 @@ string str;
 getline(cin,str); /*begins reading characters into str and continues until '\n' is encountered which is read but not stored in str*/
 ```
 
-**getline(..,..) removes newline from the input stream while cin doesn't.**
-**cin ignores leading whitespaces but getline doesn't ignore them.**
+> getline removes newline from the input stream while cin doesnt.
+  
+> cin ignores leading whitespaces but getline doesnt ignore them.
 
 
